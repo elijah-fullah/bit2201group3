@@ -1,0 +1,81 @@
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar { width: 5px; }
+
+::-webkit-scrollbar-track { 
+  background: var(--blue-crayola); 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--oxford-blue);
+}
+
+::-webkit-scrollbar-thumb:hover { 
+  background: var(--oxford-blue);
+ }
+
+body{
+    font-family: "Jost", sans-serif;
+    background: var(--oxford-blue) url('bg-texture.png');
+    color: var(--lavender-blue);
+    line-height: 1.7;
+}
+
+.frame {
+    height: calc(100vh - 95px) !important;
+    width: 100% !important;
+    border: 0;
+}
+
+.copyright {
+    background: transparent;
+    text-align: center;
+    color: var(--lavender-blue);
+    font-size: var(--fs-6);
+    padding: 15px var(--px);
+    line-height: 1.7;
+}
+  
+.copyright a {
+    display: inline-block;
+    color: var(--blue-crayola);
+    transition: var(--default-transition);
+}
+  
+.copyright a:hover {
+     color: var(--oxford-blue3); 
+}
+
+:root {
+
+    /**
+     * colors
+     */
+
+    --oxford-blue: hsl(204, 39%, 15%);
+    --lavender-blue: hsl(229, 96%, 91%);
+    --blue-crayola: hsl(8, 67%, 30%);
+
+    /**
+     * typography 
+     */
+  
+    --fs-6: 15px;
+
+    /**
+     * spacing 
+     */
+  
+    --px: 15px;
+
+
+    /**
+     * others 
+     */
+  
+    --default-transition: 0.25s ease;
+
+}
